@@ -26,14 +26,16 @@ for i in range (0,Npart):
     ### for the ith particle
     T[i] = 0.5 * m[i] * v[i]**2
 
-print(T)
+
+
+print("Kinetic energy is ", T)
 
 print (m)
 print (q)
 print (x)
 print (v)
 ### variables for pair of particles
-r12 = np.sqrt((x1-x2)**2)
-v12 = q1*q2/r12
-print(" separation is ", r12)
+r12 = np.sqrt((x[1]-x[2])**2)
+v12 = q[1]*q[2]/r12
+print("Separation is ", r12)
 print("Potential Energy is ",v12)
