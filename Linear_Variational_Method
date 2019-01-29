@@ -1,0 +1,9 @@
+import numpy as np
+import sympy as sp
+
+part0 = ((np.pi*(j**2))/1000)
+
+a = sin((i*np.pi*x)/(10))
+b = sin((j*np.pi*x)/(10))
+x = sp.symbol('x')
+part1 = sp.integrate((a*b), x)
